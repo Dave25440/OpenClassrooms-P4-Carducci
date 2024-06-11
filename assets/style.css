@@ -293,7 +293,7 @@ input[type="submit"] {
 		height: auto;
 		margin: 2em 0;
 	}
-	.service__description {
+	.service-description {
 		margin-bottom: 1em;
 	}
 	#services .container::before {
