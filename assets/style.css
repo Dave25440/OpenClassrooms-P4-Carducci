@@ -7,10 +7,13 @@ body {
 	max-width: 1920px;
 	margin: auto;
 }
+h1 {
+	font-size: 26px;
+}
 
 
 /* Header */
-.top-header {
+header {
 	background-color: white;
 	position: sticky;
 	top: 0;
@@ -21,23 +24,20 @@ body {
 	padding-block: 30px;
 	align-items: center;
 }
-.name {
-	font-size: 26px;
-}
-.nav ul {
+nav ul {
 	display: flex;
 	list-style-type: none;
 	font-size: 14px;
 	margin-bottom: 0;
 }
-.nav li {
+nav li {
 	padding-inline: 10px;
 }
-.nav a {
+nav a {
 	text-decoration: none;
 	color: black;
 }
-.social-link img {
+nav img {
 	width: 20px;
 }
 
