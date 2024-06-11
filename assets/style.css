@@ -327,15 +327,16 @@ input[type="submit"] {
 @media all and (max-width: 650px) {
 
 	/* Header */
-	.top-header {
+	header {
 		flex-direction: column;
 		padding-inline: 0;
 	}
-	.top-header .nav, .top-header .nav ul {
+	nav,
+	nav ul {
 		width: 100%;
 		padding: 0;
 	}
-	.top-header .nav li {
+	nav li {
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;
