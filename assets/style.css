@@ -11,12 +11,12 @@ h1 {
 	font-size: 26px;
 }
 h2 {
-	font-size: calc(1.3em + 0.6vw);
+	font-size: 1.75em;
 }
 blockquote {
 	font-family: "Spectral";
 	font-style: italic;
-	font-size: calc(1.375em + 1.5vw);
+	font-size: 2.5em;
 	font-weight: 300;
 	line-height: 1.2;
 }
@@ -263,6 +263,14 @@ footer {
 
 /* Affichage jusqu'à 1180 pixels de large */
 @media all and (max-width: 1180px) {
+
+	/* Global */
+	h2 {
+		font-size: calc(1.3em + 0.6vw);
+	}
+	blockquote {
+		font-size: calc(1.375em + 1.5vw);
+	}
 
 	/* Section about */
 	#about,
