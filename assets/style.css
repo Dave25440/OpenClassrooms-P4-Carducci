@@ -107,6 +107,9 @@ nav img {
 .gallery .nav {
 	justify-content: center;
 }
+.nav-item {
+	padding-inline: 10px;
+}
 .nav-pills .nav-link {
 	color: black;
 }
@@ -147,7 +150,7 @@ nav img {
 	font-family: "Spectral";
 	font-style: italic;
 	width: 70%;
-	margin: auto;
+	margin: auto auto 1em;
 	padding-block: 3em;
 }
 .quote figcaption {
@@ -184,11 +187,15 @@ nav img {
 	width: 30%;
 	height: 337px;
 	padding: 1em;
+	margin: 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	z-index: 1;
 	list-style-type: none;
+}
+.service p {
+	margin: 0;
 }
 
 
