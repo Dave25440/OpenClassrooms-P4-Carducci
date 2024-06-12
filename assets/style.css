@@ -114,12 +114,13 @@ nav img {
 }
 .nav-pills .nav-link {
 	color: black;
+	border-radius: 0;
+	cursor: pointer;
 }
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
+.nav-pills .nav-link.active-tag,
+.nav-pills .nav-link:hover {
 	color: white;
 	background-color: #BEB45A;
-	border-radius: 0;
 }
 .item-column {
 	position: relative;
