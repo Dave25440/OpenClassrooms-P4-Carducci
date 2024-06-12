@@ -46,12 +46,16 @@ nav img {
 #about {
 	display: flex;
 	background-color: #F6D2B8;
-	padding-inline: 100px;
-	padding-block: 100px;
+	padding: 100px;
 	position: relative;
 }
+.picture {
+	flex: 1;
+	margin: 0 20px;
+	z-index: 0;
+}
 .picture.left::before {
-	content: " ";
+	content: "";
 	background-color: #E5975F;
 	width: 374px;
 	height: 329px;
@@ -60,23 +64,18 @@ nav img {
 	left: 0;
 	z-index: -1;
 }
-.picture {
-	flex: 1;
-	margin: 0 20px;
-	z-index: 0;
-}
 .picture img {
 	width: 100%;
 }
 #about-me {
 	flex: 2;
 }
-.about-me__title {
+#about-me h2 {
 	margin-top: 1em;
 	margin-bottom: 60px;
 	font-size: 30px;
 }
-.about-me__introduction {
+#about-me h3 {
 	font-family: "Spectral";
 	font-weight: 800;
 	font-style: italic;
@@ -243,17 +242,19 @@ input[type="submit"] {
 @media all and (max-width: 1180px) {
 
 	/* Section about */
+	#about,
+	#contact .container {
+		align-items: center;
+	}
 	.picture {
 		flex: 2;
 	}
-	#about, #contact .container {
-		align-items: center;
-	}
-	.about-me__title {
+	#about-me h2 {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+	#about-me h3,
+	#about-me p {
 		width: 100%;
 	}
 }
@@ -278,7 +279,7 @@ input[type="submit"] {
 		left: 0;
 		z-index: -1;
 	}
-	.about-me__title {
+	#about-me h2 {
 		text-align: center;
 		margin-top: 1em;
 	}
@@ -343,6 +344,10 @@ input[type="submit"] {
 	}
 
 	/* Section about */
+	#about,
+	#contact {
+		padding: 2em;
+	}
 	.picture.left::before, .picture.right::before {
 		height: 150px;
 	}
@@ -356,10 +361,6 @@ input[type="submit"] {
 	}
 
 	/* Section contact */
-	#about, #contact {
-		padding-inline: 2em;
-		padding-block: 2em;
-	}
 	form {
 		width: 100%;
 	}
