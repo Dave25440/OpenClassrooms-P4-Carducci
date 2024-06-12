@@ -10,6 +10,13 @@ body {
 h1 {
 	font-size: 26px;
 }
+blockquote {
+	font-family: "Spectral";
+	font-style: italic;
+	font-size: 2.5em;
+	font-weight: 300;
+	line-height: 1.2;
+}
 
 
 /* Header */
@@ -89,20 +96,25 @@ nav img {
 
 
 /* Section gallery */
-.title {
+.section-title {
 	text-align: center;
+	font-size: 1.75em;
 	padding-block: 2em;
+}
+.gallery {
+	display: none;
 }
 .gallery .nav {
 	justify-content: center;
 }
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+.nav-pills .nav-link {
+	color: black;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
 	color: white;
 	background-color: #BEB45A;
 	border-radius: 0;
-}
-.nav-pills .nav-link {
-	color: black;
 }
 .item-column {
 	position: relative;
@@ -110,7 +122,7 @@ nav img {
 	padding: 0;
 }
 .item-column::after {
-	content: " ";
+	content: "";
 	display: block;
 	padding-bottom: 100%;
 }
@@ -121,7 +133,8 @@ nav img {
 	object-fit: cover;
 	padding: .5em;
 }
-.mg-prev, .mg-next {
+.mg-prev,
+.mg-next {
 	width: 30px;
 	height: 30px;
 	border-radius: 0;
@@ -137,14 +150,7 @@ nav img {
 	margin: auto;
 	padding-block: 3em;
 }
-.quote__text {
-	font-family: "Spectral";
-	font-style: italic;
-	font-size: 2.5em;
-	font-weight: 300;
-	line-height: 1.2;
-}
-.quote__author {
+.quote figcaption {
 	font-family: "Spectral";
 	font-weight: 800;
 	font-size: 22px;
