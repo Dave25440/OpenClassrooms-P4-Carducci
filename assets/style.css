@@ -10,10 +10,13 @@ body {
 h1 {
 	font-size: 26px;
 }
+h2 {
+	font-size: calc(1.3em + 0.6vw);
+}
 blockquote {
 	font-family: "Spectral";
 	font-style: italic;
-	font-size: 2.5em;
+	font-size: calc(1.375em + 1.5vw);
 	font-weight: 300;
 	line-height: 1.2;
 }
@@ -98,7 +101,6 @@ nav img {
 /* Section gallery */
 .section-title {
 	text-align: center;
-	font-size: 1.75em;
 	padding-block: 2em;
 }
 .gallery {
@@ -211,9 +213,6 @@ nav img {
 }
 .form-container {
 	flex: 2;
-}
-#contact h2 {
-	font-size: 1.75em;
 }
 form {
 	display: flex;
