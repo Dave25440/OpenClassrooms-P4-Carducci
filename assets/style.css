@@ -164,7 +164,7 @@ nav img {
 	position: relative;
 }
 #services .container::before {
-	content: " ";
+	content: "";
 	background-color: #1C6474;
 	position: absolute;
 	width: 100%;
@@ -176,7 +176,7 @@ nav img {
 #services .container {
 	justify-content: space-between;
 	display: flex;
-	padding : 2em 0;
+	padding: 2em 0;
 }
 .service {
 	background-color: white;
@@ -188,7 +188,7 @@ nav img {
 	flex-direction: column;
 	justify-content: space-between;
 	z-index: 1;
-	list-style: none;
+	list-style-type: none;
 }
 
 
@@ -291,6 +291,14 @@ input[type="submit"] {
 	}
 
 	/* Section services */
+	#services .container::before {
+		width: 30%;
+		height: 100%;
+		bottom: 0;
+		right: 0;
+		left: auto;
+		z-index: 0;
+	}
 	#services .container {
 		flex-direction: column;
 	}
@@ -302,14 +310,6 @@ input[type="submit"] {
 	}
 	.service-description {
 		margin-bottom: 1em;
-	}
-	#services .container::before {
-		width: 30%;
-		height: 100%;
-		bottom: 0;
-		right: 0;
-		left: auto;
-		z-index: 0;
 	}
 
 	/* Section contact */
