@@ -53,10 +53,10 @@
 						<img src="./assets/images/slider/portrait_ryoji_iwata_travail.webp" class="d-block w-100 h-auto" width="1920" height="888" alt="Portrait de Ryoji Iwata se rendant au travail - Slide 1">
 					</div>
 					<div class="carousel-item">
-						<img src="./assets/images/slider/concert_nicholas_green_fosse.webp" class="d-block w-100 h-auto" width="1920" height="888" loading="lazy" class="d-block w-100" alt="Ambiance festive en fosse au concert de Nicholas Green - Slide 2">
+						<img src="./assets/images/slider/concert_nicholas_green_fosse.webp" class="d-block w-100 h-auto" width="1920" height="888" loading="lazy" alt="Ambiance festive en fosse au concert de Nicholas Green - Slide 2">
 					</div>
 					<div class="carousel-item">
-						<img src="./assets/images/slider/mariage_edward_cathy_cisneros.webp" class="d-block w-100 h-auto" width="1920" height="888" loading="lazy" class="d-block w-100" alt="Échange d'un baiser au bal du mariage d'Edward et Cathy Cisneros - Slide 3">
+						<img src="./assets/images/slider/mariage_edward_cathy_cisneros.webp" class="d-block w-100 h-auto" width="1920" height="888" loading="lazy" alt="Échange d'un baiser au bal du mariage d'Edward et Cathy Cisneros - Slide 3">
 					</div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -70,7 +70,12 @@
 			</div>
 			<section id="about">
 				<figure class="picture left">
-					<img src="./assets/images/nina_carducci.webp" class="h-auto" width="560" height="558" loading="lazy" alt="Autoportrait dans la nature">
+					<picture>
+						<source srcset="./assets/images/nina_carducci_medium.webp" media="(max-width: 650px)">
+						<source srcset="./assets/images/nina_carducci_small.webp" media="(max-width: 1000px)">
+						<source srcset="./assets/images/nina_carducci_medium.webp" media="(max-width: 1180px)">
+						<img src="./assets/images/nina_carducci.webp" class="h-auto" width="560" height="558" loading="lazy" alt="Autoportrait dans la nature">
+					</picture>
 				</figure>
 				<div id="about-me">
 					<h2>À propos de moi</h2>
@@ -154,7 +159,12 @@
 						</form>
 					</div>
 					<figure class="picture right">
-						<img src="./assets/images/camera_leica.webp" class="h-auto" width="419" height="418" loading="lazy" alt="Mon appareil photo Leica avec objectif grand angle">
+						<picture>
+							<source srcset="./assets/images/camera_leica.webp" media="(max-width: 650px)">
+							<source srcset="./assets/images/camera_leica_small.webp" media="(max-width: 1000px)">
+							<source srcset="./assets/images/camera_leica_large.webp" media="(max-width: 1180px)">
+							<img src="./assets/images/camera_leica.webp" class="h-auto" width="419" height="418" loading="lazy" alt="Mon appareil photo Leica avec objectif grand angle">
+						</picture>
 					</figure>
 				</div>
 			</section>
