@@ -115,14 +115,14 @@ nav img {
 .nav-item {
 	padding-inline: 10px;
 }
-.nav-pills .nav-link {
+.nav-pills .nav-link,
+.nav-pills .nav-link.active {
 	color: black;
 	border-radius: 0;
 	cursor: pointer;
 }
 .nav-pills .nav-link.active-tag,
 .nav-pills .nav-link:hover {
-	color: white;
 	background-color: #BEB45A;
 }
 .item-column {
