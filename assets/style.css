@@ -143,6 +143,9 @@ nav img {
 	padding: .5em;
 	cursor: pointer;
 }
+.modal-dialog {
+	max-width: 559px;
+}
 .mg-prev,
 .mg-next {
 	width: 30px;
