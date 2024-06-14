@@ -49,6 +49,10 @@
     navigation: true
   };
   $.fn.mauGallery.listeners = function(options) {
+    $(`#${options.lightboxId}`).on("hidden.bs.modal", function () {
+      $.fn.mauGallery.element.focus();
+    });
+
     $(".gallery-item").on("click", function() {
       if (options.lightBox && $(this).prop("tagName") === "IMG") {
         $.fn.mauGallery.methods.openLightBox($(this), options.lightboxId);
@@ -134,6 +138,7 @@
       }
     },
     openLightBox(element, lightboxId) {
+      $.fn.mauGallery.element = element;
       $(`#${lightboxId}`)
         .find(".lightboxImage")
         .attr("src", element.attr("src"));
