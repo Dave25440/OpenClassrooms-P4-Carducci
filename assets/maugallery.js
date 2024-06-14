@@ -76,6 +76,14 @@
     $(".gallery").on("click", ".mg-next", () =>
       $.fn.mauGallery.methods.nextImage(options.lightboxId)
     );
+    $(`#${options.lightboxId}`).on("keydown", function(e) {
+      if (e.key === "ArrowLeft") {
+        $(".mg-prev").click();
+      }
+      if (e.key === "ArrowRight") {
+        $(".mg-next").click();
+      }
+    });
   };
   $.fn.mauGallery.methods = {
     createRowWrapper(element) {
