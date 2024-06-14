@@ -64,6 +64,12 @@
     });
 
     $(".gallery").on("click", ".nav-link", $.fn.mauGallery.methods.filterByTag);
+    $(".gallery").on("keypress", ".nav-link", function(e) {
+      if (e.key === "Enter" || " ") {
+        e.preventDefault();
+        $(this).click();
+      }
+    });
     $(".gallery").on("click", ".mg-prev", () =>
       $.fn.mauGallery.methods.prevImage(options.lightboxId)
     );
