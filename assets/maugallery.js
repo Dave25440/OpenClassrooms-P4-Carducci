@@ -87,6 +87,9 @@
       if (e.key === "ArrowRight") {
         $(".mg-next").click();
       }
+      if (e.key === "Tab") {
+        e.preventDefault();
+      }
     });
   };
   $.fn.mauGallery.methods = {
