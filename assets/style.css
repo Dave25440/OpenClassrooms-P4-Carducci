@@ -36,6 +36,10 @@ footer a {
 	text-decoration: none;
 	color: black;
 }
+nav a:hover,
+footer a:hover {
+	color: #E5975F;
+}
 .h-auto {
 	height: auto;
 }
