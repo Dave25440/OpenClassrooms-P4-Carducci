@@ -422,4 +422,7 @@ footer {
 		justify-content: center;
 		padding-inline: 0;
 	}
+	footer ul {
+		padding-left: 0;
+	}
 }
